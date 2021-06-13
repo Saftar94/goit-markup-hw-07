@@ -1,0 +1,53 @@
+/* ====================== Наши клиенты =================== */
+
+.clients-section{
+    padding: 94px 0;
+}
+
+.client{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin-left: calc(-1 * var(--marg-cart));
+     
+    &__title{
+    width: 170px;
+    height: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: calc(100%/6 - var(--marg-cart));
+    margin-left: var(--marg-cart);
+
+    border-radius: 4%;
+}
+
+
+
+&__iconbody {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    fill: var(--icon-colo);
+    border: 1px solid var(--icon-colo);
+    border-radius: 4px;
+
+    transition-property: fill,  border-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+}
+
+&__iconbody:hover,
+&__iconbody:focus{
+
+    fill: var(--hover-colorblu);
+    border-color: var(--hover-colorblu);
+
+}
+
+    
+}
+

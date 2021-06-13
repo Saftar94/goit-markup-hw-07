@@ -1,0 +1,67 @@
+
+ /* ==================== особености=====================  */
+
+
+ .features{
+    padding: 94px 0;
+}
+
+
+ .featuresblock{
+
+    &__body  &__iconlink{
+    margin-bottom: 30px;
+}
+
+&__iconfeat{
+    display: flex;
+    width: 270px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--port-hedrgr);
+}
+
+&__iconfeat &__iconfeatures{
+    width: 70px;
+    height: 70px;
+}
+
+
+& &__title{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+     margin-right: calc(-1 * var(--marg-cart));
+}
+
+
+&__title &__body{
+    flex-basis: calc(100% / 4 - var(--marg-cart));
+    margin-right: var(--marg-cart);
+}
+
+
+&__body &__hero{
+    font-weight: 700;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--text-colorbl);
+    font-family: var(--text-body);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+
+    margin-bottom: 10px;
+}
+
+
+&__body{
+    line-height: 1.71;
+    color: var(--text-colorgre);
+    list-style: none;
+    color: var(--text-colorgre);
+}
+
+}
+

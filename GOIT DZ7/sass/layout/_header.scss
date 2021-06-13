@@ -1,0 +1,135 @@
+
+.headernav__links{
+    list-style: none;
+    color: var(--text-colorgre);
+}
+
+
+
+
+/* Шапка сайта flex box*/
+.header{
+    padding-bottom: 25px;
+    padding-top: 25px;
+
+    border-bottom: 1px solid var(--bord-head);
+}
+.header .container{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.headernav{
+    display: flex;
+    align-items: center;
+  
+}
+
+.headernav{
+    display: flex;
+    align-items: center;
+    
+    &__hero{
+    margin-left: 93px;
+    @extend .headernav
+ 
+}
+&__links:not(:first-child){
+    margin-left: 50px;
+}
+
+}
+
+.contact__links:not(:first-child){
+    @extend .headernav__links
+}
+
+
+/* Подчеркивание шапкаи */
+
+
+
+/* Шрифт шапки лого */
+
+.headernav .headernav__logo{
+    font-family: var(--text-logo); 
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color:var(--text-colorbl);
+    text-decoration: none;
+
+}
+.headernav__logo .headernav__web{
+    color:var(--hover-colorblu);
+}
+/* шрифт шапки навигация */
+
+.headernav__hero .headernav__link{
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+
+    color: var(--text-colorbl);
+    transition-property: color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+
+}
+
+.headernav__hero .headernav__link:hover,
+.headernav__hero .headernav__link:focus
+{
+    color: var(--hover-colorblu);
+
+}
+
+
+
+/* шрифт шапки контакты */
+
+
+.contact{
+    display: flex;
+    align-items: center;
+    
+    
+&__links{
+    list-style: none;
+    color: var(--text-colorgre);
+}
+
+&__main{
+    fill: var(--text-colorgre);
+
+
+    display: flex;
+    align-items: center;
+    color: var(--text-colorgre);
+
+    transition-property: color, fill;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+}
+
+&__main &__iconhead{
+    margin-right: 10px;
+}
+
+
+&__main:hover,
+&__main:focus {
+    color: var(--hover-colorblu);
+    fill: var(--hover-colorblu);
+}
+
+}

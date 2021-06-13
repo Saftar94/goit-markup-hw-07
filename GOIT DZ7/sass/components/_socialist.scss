@@ -1,0 +1,92 @@
+// social list card icon
+
+.iconteam{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    
+    &__title &__body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    transition-property: background-color;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+&__title &__body:hover,
+&__title &__body:focus{
+    background-color: var(--hover-colorblu);
+}
+
+& &__title:not(:last-child){
+    margin-right: 10px;
+}
+
+&__body &__iconsvg{
+    width: 20px;
+    height: 20px;
+    fill: var(--icon-colo);
+
+    transition-property: fill;
+
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+}
+
+
+&__title &__body:hover &__iconsvg,
+&__title &__body:focus &__iconsvg{
+    fill: var(--text-colorwh);
+}
+}
+
+
+// social list footer icom
+
+
+
+.iconfooter{
+    display: flex;
+    list-style: none;
+    justify-content: baseline;
+    
+    &__body{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    fill: var(--text-colorgre);
+    background-color: #ffffff1a;
+    border-radius: 50%;
+
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+
+}
+&__body:hover,
+&__body:focus{
+    background-color: var(--hover-colorblu);
+}
+
+&__svg{
+    width: 20px;
+    height: 20px;
+    fill: var(--text-colorwh);
+}
+
+
+
+& &__title:not(:last-child){
+    margin-right: 10px;
+}
+
+}

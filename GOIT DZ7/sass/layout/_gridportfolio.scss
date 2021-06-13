@@ -1,0 +1,106 @@
+/* сетка карточки */
+
+.portfolio-hero{
+   display: flex;
+   flex-wrap: wrap;
+   list-style: none;
+   margin-top:calc(-1 * var(--marg-cart));
+   margin-left: calc(-1 * var(--marg-cart));
+   
+   
+& &__title{
+  flex-basis: calc(100%/3 - var(--marg-cart));
+  margin-top: var(--marg-cart);
+  margin-left: var(--marg-cart);
+  cursor: pointer;
+  border: 1px solid #EEEEEE;
+
+  list-style: none;
+  color: var(--text-colorgre);
+
+  transition-property:  box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+}
+
+&__links{
+  text-decoration: none;
+  display: block;
+
+  list-style: none;
+  color: var(--text-colorgre);
+}
+
+&__links:hover,
+&__links:focus{
+  box-shadow:
+  0px 1px 1px rgba(0, 0, 0, 0.12),
+  0px 4px 4px rgba(0, 0, 0, 0.06),
+  1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
+&__name{
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--text-colorbl);
+
+  margin-bottom: 4px;
+
+}
+&__footer{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.87;
+  color: var(--text-colorgre);
+
+}
+
+&__carddes{
+padding: 20px 24px;
+
+}
+
+&__overlay{
+  position: relative;
+  overflow: hidden;
+  
+}
+&__description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+
+  color: var(--text-colorwh);
+  background:
+   rgba(33, 150, 243, 0.9);
+   font-family: var(--text-body);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.55;
+  letter-spacing: 0.03em;
+  padding: 44px 54px;
+
+  overflow: auto;
+
+  transform: translateY(100%);
+
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 250ms;
+
+}
+&__links:hover &__description,
+&__links:focus &__description {
+  transform: translateY(0%);
+ 
+}
+
+}

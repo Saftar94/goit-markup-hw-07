@@ -1,0 +1,37 @@
+/* Order Flex */
+
+
+.order{
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image:linear-gradient(
+     rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+     url(../image/backimg.jpg);
+    background-size: cover;
+    background-image: center;
+    background-repeat: no-repeat;
+    
+     & .mainorder{
+     width: 696px;
+     text-align: center;
+     
+      &__efect{
+ font-weight: 900;
+ font-size: 44px;
+ line-height: 1.5;
+ text-align: center;
+ letter-spacing: 0.06em;
+ text-transform: uppercase;
+ color: var(--text-colorwh);
+ margin-bottom: 30px;
+ 
+ }
+ 
+ }
+ 
+
+ }
+ 
+
+ 
